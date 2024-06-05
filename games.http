@@ -1,0 +1,23 @@
+GET http://localhost:5088/games
+
+###
+GET http://localhost:5088/games/1
+
+###
+POST http://localhost:5088/games
+Content-Type: application/json
+
+{
+    "name":"Cyberpunk","genre":"RPG", "price":59.99, "releaseDate":"2011-11-18"
+}
+
+###
+PUT http://localhost:5088/games/133
+Content-Type: application/json
+
+{
+    "name":"1111Cyberpunk1111","genre":"", "price":59.99, "releaseDate":"2011-11-18"
+}
+
+###
+DELETE http://localhost:5088/games/1
